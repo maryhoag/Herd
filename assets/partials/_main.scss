@@ -1,0 +1,102 @@
+
+
+/*background*/
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+* {
+    box-sizing: inherit;
+    
+}
+
+body {
+    position: relative; 
+    margin: 0;
+    padding-bottom: 6rem;
+    height: 100%;
+}
+
+.page-wrap {
+    margin: 0 auto;
+    padding-top: 64px;
+    max-width: 640px;
+    width: 94%;
+}
+
+/*footer style*/
+
+#homepage {
+    min-height: 100%;
+    margin-bottom: -80px;
+}
+
+#homepage:after {
+    content: "";
+    display: block;
+}
+
+#footer, #homepage:after {
+    height: 80px;
+}
+#footer {
+   background-color: $background_color;
+    width: 100%;
+    
+    li {
+        display: inline;
+        font-family: $header_font;
+        width: 20%;
+    }
+    p {
+        color: $light_text_color;
+    }
+}
+
+
+/*fonts*/
+
+
+
+.page-header {
+  padding-top: 20px;
+  margin: 0;
+  background-color: $header_color;
+
+  h1 {
+  font-family: 'Alegreya SC', serif;
+  color: $light_text_color;
+  display: inline-block;
+    /* nested Sass syntax */
+    small {
+      color: $text_color;
+    }
+    #title {
+      display: inline-block !important;
+      vertical-align: middle;
+    }
+  }
+}
+
+/*logo/car icon*/
+#logo{
+  float: left;
+  vertical-align: left;
+}
+
+
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    // Fixes Opera/contenteditable bug:
+    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
